@@ -22,11 +22,12 @@
 - [x] CHAPTER 5: DESIGN CONSISTENT HASHING
   - Hash ring
 
-- [ ] CHAPTER 6: DESIGN A KEY-VALUE STORE
+- [x] CHAPTER 6: DESIGN A KEY-VALUE STORE
   - CAP theorem
     - **Consistency**: all clients see the same data at the same time no matter which node they connect to.
     - **Availability**: any client which requests data gets a response even if some of the nodes are down.
     - **Partition Tolerance**: the system continues to operate despite network partitions (a communication break between two nodes).
+  - A **vector clock** is a [server, version] pair associated with a data item. It can be used to check if one version precedes, succeeds, or in conflict with others.
   - Quorum consensus
     - If R = 1 and W = N, the system is optimized for a fast read.
     - If W = 1 and R = N, the system is optimized for fast write.
