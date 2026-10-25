@@ -34,7 +34,16 @@
     - If W + R > N, strong consistency is guaranteed (Usually N = 3, W = R = 2).
     - If W + R <= N, strong consistency is not guaranteed.
 
-- [ ] CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS
+- [x] CHAPTER 7: DESIGN A UNIQUE ID GENERATOR IN DISTRIBUTED SYSTEMS
+  - Multi-master replication
+  - UUID (128-bit)
+  - Ticket Server
+  - Twitter snowflake approach
+    - Sign bit: 1 bit
+    - Timestamp: 41 bits
+    - Datacenter ID: 5 bits
+    - Machine ID: 5 bits
+    - Sequence number: 12 bits (reset to 0 every millisecond)
 
 - [ ] CHAPTER 8: DESIGN A URL SHORTENER
 
